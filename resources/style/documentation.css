@@ -1,0 +1,46 @@
+body {
+    margin: 15px auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #28282E;
+    color: #F2F2F2;
+    font-family: "IBM Plex Mono";
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+a:link, a:visited {
+    color: #f2f2f2;
+}
+
+p, td {
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 12px;
+}
+
+td code {
+    font-size: 12px;
+    font-family: "IBM Plex Mono";
+    background-color: #34343A;
+    border-radius: 2px;
+    margin-top: -3px;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+}

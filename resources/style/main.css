@@ -1,0 +1,37 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #28282E;
+    font-family: 'IBM Plex Mono';
+}
+
+canvas {
+    position: fixed;
+    cursor: crosshair;
+}
+
+
+/* Toolbar */
+
+#toolbar {
+    position: fixed;
+    padding: 5px;
+    bottom: 0;
+    width: 100%;
+    background-color: #34343A;
+}
+
+button {
+    -webkit-appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: #F2F2F2;
+    font-size: 14px;
+    font-family: 'IBM Plex Mono';
+    cursor: pointer;
+}

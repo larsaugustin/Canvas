@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/resources/style/main.css" type="text/css"/>
+        <link rel="stylesheet" href="/resources/style/fonts.css" type="text/css"/>
+        <link rel="icon" type="image.png" href="/resources/images/favicon.png" />
+        <link rel="apple-touch-icon" href="/resources/images/favicon.png">
+        <link rel="shortcut icon" href="/resources/images/favicon.png">
+    </head>
+    <body>
+        <!-- Canvas -->
+        <canvas id="main-canvas"></canvas>
+
+        <!-- Toolbar -->
+        <div id="toolbar">
+            <button onclick="importFile()">Import</button>
+            <button onclick="downloadFile()">Export</button>
+            <button onclick="showDocumentation()" style="float:right; margin-right: 15px">Documentation</button>
+        </div>
+
+        <!-- Scripts -->
+        <script src="/resources/scripts/documentation.js"></script>
+        <script src="/resources/scripts/file.js"></script>
+        <script src="/resources/scripts/global.js"></script>
+        <script src="/resources/scripts/keyboard.js"></script>
+        <script src="/resources/scripts/pointer.js"></script>
+        <script src="/resources/scripts/renderer.js"></script>
+        <script src="/resources/scripts/touch.js"></script>
+        <script src="/resources/scripts/setup.js"></script>
+
+        <!-- (C) 2021 Lars Augustin -->
+    </body>
+</html>
