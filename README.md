@@ -1,6 +1,6 @@
 # Canvas
 
-![Screenshot of Canvas](resources/documentation/screenshot.png)
+![Screenshot of Canvas](screenshot.png)
 
 Canvas is a small browser-based design tool. It supports basic vector shapes and makes heavy use of the keyboard for editing. Since it is written in plain JavaScript it’s very light and portable.
 
