@@ -1,4 +1,4 @@
-// Default File
+// Default file
 
 var file = {
     "name": "New Document",
@@ -58,3 +58,36 @@ function downloadFile() {
     link.remove();
 }
 
+
+// PNG export
+
+function exportArtboard() {
+    if (selectedObject.artboard != null) {
+        var artboard = file.artboards[selectedObject.artboard];
+        var currentScale = file.scale;
+        file.scale = parseFloat(safePrompt("Scale"));
+        canvas = document.createElement("canvas");
+        context = canvas.getContext("2d");
+        canvas.width = artboard.width * file.scale;
+        canvas.height = artboard.height * file.scale;
+        context.fillStyle = artboard.color;
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        drawLayers(context, artboard, 0, 0);
+
+        // Download image
+        var string = canvas.toDataURL("image/png");
+        var link = document.createElement("a");
+        link.setAttribute("href", string);
+        link.setAttribute("download", file.name + ".png");
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+
+        // Reset state
+        file.scale = currentScale;
+        canvas = document.getElementById("main-canvas");
+        context = canvas.getContext("2d");
+        draw();
+    }
+}

@@ -20,7 +20,7 @@ I created the tool for myself but chose to make it available as free open-source
 ## To Do
 
 * Vector import
-* PNG/SVG export
+* SVG export
 * Touch support
 * Easy way to run it locally
 

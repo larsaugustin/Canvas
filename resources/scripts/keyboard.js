@@ -186,6 +186,8 @@ function didPressEnter() {
             } else if (currentText == "delete") {
                 file.artboards.splice(selectedObject.artboard, 1);
                 selectedObject = {"artboard": null, "layer": null};
+            } else if (currentText == "export") {
+                exportArtboard();
             }
         } else if (currentText == "name") {
             file.name = safePrompt("Name", file.name);
